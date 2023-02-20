@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedoConnect"
+        tools:targetApi="31">
+        <activity
+            android:name=".splash_screen"
+            android:exported="false" />
+        <activity
+            android:name=".exercise_kit"
+            android:exported="false" />
+        <activity
+            android:name=".consult_doc"
+            android:exported="false" />
+        <activity
+            android:name=".start_therapy"
+            android:exported="false" />
+        <activity
+            android:name=".patient_panel"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_appointments"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_advancetools"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_panel"
+            android:exported="false" />
+        <activity
+            android:name=".doctor_login"
+            android:exported="false" />
+        <activity
+            android:name=".patient_login"
+            android:exported="false" />
+        <activity
+            android:name=".app_start_screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -6,4 +6,91 @@
     android:layout_height="match_parent"
     tools:context=".patient.patient_panel">
 
+    <TextView
+        android:id="@+id/welcome_patiient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Welcome Sadia!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/women_icon"
+        android:layout_width="182dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_patiient"
+        app:srcCompat="@drawable/woman_icon" />
+
+    <ImageView
+        android:id="@+id/doc_prespcribe_icon"
+        android:layout_width="159dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/patient_vitals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/women_icon"
+        app:srcCompat="@drawable/doc_prescription_1" />
+
+    <EditText
+        android:id="@+id/patient_vitals"
+        android:layout_width="194dp"
+        android:layout_height="196dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:foregroundGravity="center"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textMultiLine"
+        android:text="YOUR DAILY PROGRESS!
+                      10 mins jogging
+                      Avg. Heart rate 70BPM
+                      BP 70/110 "
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <Button
+        android:id="@+id/therapy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="START THERAPY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_vitals"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/consult_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="CONSULT DOCTOR"
+        app:layout_constraintBottom_toTopOf="@+id/text_demo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/therapy_button"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/text_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="Demo Version"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/therapy_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
